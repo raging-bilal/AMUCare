@@ -1,0 +1,89 @@
+<!-- templates/request-aid.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Aid | AMU Care Foundation</title>
+    <link rel="stylesheet" href="static/css/style.css">                        <!-- Main CSS for all pages -->
+    <link rel="stylesheet" href="static/css/request-aid.css">                 <!-- CSS for Aid Request Page -->
+    <script src="static/js/script.js" defer></script>                         <!-- Main JS for all pages -->
+    <script src="static/js/request-aid.js" defer></script>                    <!-- JS for Aid Request Page -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="static/images/logo.png" alt="AMU Care Foundation Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="volunteer-opportunities.html">Volunteer Opportunities</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="request-aid.html" class="active">Request Aid</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Aid Request Form -->
+    <main>
+        <h1>Request Aid</h1>
+        <form id="aid-request-form">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Request Details</legend>
+                <label for="type">Type of Aid:</label>
+                <select id="type" name="type" required>
+                    <option value="">Select Aid Type</option>
+                    <option value="food">Food</option>
+                    <option value="shelter">Shelter</option>
+                    <option value="medical">Medical Aid</option>
+                </select>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <label for="urgency">Urgency Level:</label>
+                <select id="urgency" name="urgency" required>
+                    <option value="">Select Urgency Level</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="documents">Upload Relevant Documents:</label>
+                <input type="file" id="documents" name="documents" accept=".pdf,.jpg,.png">
+            </fieldset>
+
+            <button type="submit" class="cta-button">Submit Request</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AMU Care Foundation. All rights reserved.</p>
+        <ul>
+            <li><a href="support.html">Help</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

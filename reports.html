@@ -1,0 +1,134 @@
+<!-- templates/reports.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports and Analytics | AMU Care Foundation</title>
+    <link rel="stylesheet" href="static/css/style.css"> <!-- Main CSS for consistent styling -->
+    <link rel="stylesheet" href="static/css/reports.css"> <!-- Page-specific CSS -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="static/images/logo.png" alt="AMU Care Foundation Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="volunteer-opportunities.html">Volunteer Opportunities</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="request-aid.html">Request Aid</a></li>
+                <li><a href="manage-aid.html">Manage Aid</a></li>
+                <li><a href="reports.html">Reports</a></li> <!-- Current page -->
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Reports and Analytics</h1>
+
+        <!-- Volunteer Reports Section -->
+        <section id="volunteer-reports">
+            <h2>Volunteer Reports</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Volunteer Name</th>
+                        <th>Hours Worked</th>
+                        <th>Tasks Completed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>30</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>45</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Donation Reports Section -->
+        <section id="donation-reports">
+            <h2>Donation Reports</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Donor Name</th>
+                        <th>Amount Donated</th>
+                        <th>Date</th>
+                        <th>Fund Allocation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice Johnson</td>
+                        <td>$500</td>
+                        <td>2024-01-10</td>
+                        <td>Medical Aid</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Brown</td>
+                        <td>$300</td>
+                        <td>2024-01-15</td>
+                        <td>Food & Shelter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Aid Distribution Reports Section -->
+        <section id="aid-distribution-reports">
+            <h2>Aid Distribution Reports</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aid Request ID</th>
+                        <th>Requester Name</th>
+                        <th>Resources Provided</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>John Doe</td>
+                        <td>Food, Water</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>Jane Smith</td>
+                        <td>Medical Aid</td>
+                        <td>In Progress</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Export Reports Section -->
+        <section id="export-reports">
+            <h2>Export Reports</h2>
+            <button class="cta-button" id="export-pdf">Export to PDF</button>
+            <button class="cta-button" id="export-excel">Export to Excel</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AMU Care Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="static/js/script.js" defer></script> <!-- Main JS -->
+    <script src="static/js/reports.js" defer></script> <!-- Page-specific JS -->
+</body>
+</html>

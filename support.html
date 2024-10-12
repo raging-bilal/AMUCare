@@ -1,0 +1,80 @@
+<!-- templates/support.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help and Support | AMU Care Foundation</title>
+    <link rel="stylesheet" href="static/css/style.css"> <!-- Main CSS -->
+    <link rel="stylesheet" href="static/css/support.css"> <!-- Support Page CSS -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="static/images/logo.png" alt="AMU Care Foundation Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="admin.html">Admin Panel</a></li>
+                <li><a href="support.html">Help & Support</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Help and Support</h1>
+        
+        <!-- FAQs Section -->
+        <section id="faqs">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How do I register as a volunteer?</h3>
+                <p>You can register as a volunteer through our <a href="register.html">Registration Page</a>.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I donate?</h3>
+                <p>Donations can be made through our <a href="donate.html">Donation Page</a> using various payment methods.</p>
+            </div>
+            <!-- Add more FAQ items here -->
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <form action="/submit-support-query" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+        </section>
+
+        <!-- Live Chat Section -->
+        <section id="live-chat">
+            <h2>Live Chat</h2>
+            <p>For real-time support, you can chat with us directly by clicking the button below.</p>
+            <button class="cta-button">Start Live Chat</button>
+            <!-- Placeholder for live chat integration -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AMU Care Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="static/js/script.js" defer></script> <!-- Main JS -->
+    <script src="static/js/support.js" defer></script> <!-- Support Page JS -->
+</body>
+</html>
