@@ -1,0 +1,73 @@
+/* static/css/manage-aid.css */
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #007BFF;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.status.pending {
+    background-color: #ffc107;
+    color: white;
+}
+
+.status.in-progress {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.status.completed {
+    background-color: #28a745;
+    color: white;
+}
+
+.cta-button {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+ul#logs-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul#logs-list li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+}

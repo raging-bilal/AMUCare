@@ -1,0 +1,62 @@
+/* static/css/donation-history.css */
+
+/* Consistent styling for the main content */
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2a3e52;
+}
+
+p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Styling for the table */
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Styling for the call-to-action buttons */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2a3e52;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.cta-button:hover {
+    background-color: #1e2c3b;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #2a3e52;
+}

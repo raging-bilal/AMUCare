@@ -1,0 +1,53 @@
+/* static/css/home.css */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    display: none; /* Hide all images initially */
+}
+
+.carousel img.active {
+    display: block; /* Only show active image */
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.testimonials blockquote {
+    border-left: 4px solid #2c3e50;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.gallery {
+    margin: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

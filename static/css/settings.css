@@ -1,0 +1,57 @@
+/* static/css/settings.css */
+
+/* General layout for the main content */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2a3e52;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="password"], select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button.cta-button {
+    padding: 10px 20px;
+    background-color: #2a3e52;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    align-self: center;
+}
+
+button.cta-button:hover {
+    background-color: #1e2c3b;
+}
+
+/* Delete button styling */
+button.delete {
+    background-color: #e74c3c;
+}
+
+button.delete:hover {
+    background-color: #c0392b;
+}

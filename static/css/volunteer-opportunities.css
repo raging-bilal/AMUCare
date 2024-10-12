@@ -1,0 +1,79 @@
+/* Basic styles for the Volunteer Opportunities Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background */
+}
+
+header {
+    background: #007bff; /* Same blue color as login and sign-up */
+    color: #ffffff; /* White text */
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px; /* Adjust logo size */
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #ffffff; /* White text for nav links */
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+main {
+    padding: 20px; /* Padding for main content */
+}
+
+#opportunities {
+    background: #ffffff; /* White background for opportunities section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding for opportunities */
+}
+
+h2 {
+    margin-bottom: 20px; /* Spacing for the heading */
+}
+
+.opportunity-item {
+    border: 1px solid #ddd; /* Light border for each opportunity */
+    border-radius: 4px; /* Rounded corners */
+    padding: 15px; /* Padding inside each opportunity */
+    margin-bottom: 20px; /* Spacing between opportunities */
+    transition: background 0.3s; /* Smooth background change on hover */
+}
+
+.opportunity-item:hover {
+    background: #f9f9f9; /* Light grey on hover */
+}
+
+.signup-button {
+    background-color: #28a745; /* Green button for sign-up */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for button */
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.signup-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+footer {
+    text-align: center; /* Centered text */
+    padding: 10px; /* Padding for footer */
+    background: #007bff; /* Same blue as header */
+    color: #fff; /* White text */
+    position: relative; /* Positioning footer */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
+}
