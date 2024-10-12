@@ -1,0 +1,92 @@
+<!-- templates/profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile | AMU Care Foundation</title>
+    <link rel="stylesheet" href="static/css/style.css">                      <!-- Main CSS for all pages -->
+    <link rel="stylesheet" href="static/css/profile.css">                     <!-- CSS for Profile Page -->
+    <script src="static/js/script.js" defer></script>                         <!-- Main JS for all pages -->
+    <script src="static/js/profile.js" defer></script>                        <!-- JS for Profile Page -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="static/images/logo.png" alt="AMU Care Foundation Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="volunteer-opportunities.html">Volunteer Opportunities</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="request-aid.html">Request Aid</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <main>
+        <h1>Your Profile</h1>
+        <form id="profile-form">
+            <fieldset>
+                <legend>Edit Profile</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="John Doe" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="john.doe@example.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" value="+1234567890" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Leave blank to keep current password">
+
+                <button type="submit" class="cta-button">Update Profile</button>
+            </fieldset>
+        </form>
+
+        <!-- Volunteer Information -->
+        <section id="volunteer-info">
+            <h2>Volunteer Profile</h2>
+            <p>Hours Volunteered: <span id="volunteer-hours">50</span> hours</p>
+            <p>Events Attended: <span id="events-attended">5</span></p>
+            <p>Skills: <span id="skills">First Aid, Teaching</span></p>
+        </section>
+
+        <!-- Donor Information -->
+        <section id="donor-info">
+            <h2>Donor Profile</h2>
+            <p>Total Donations: $<span id="total-donations">500</span></p>
+            <p>Donation History:</p>
+            <ul id="donation-history">
+                <li>$100 - Food Supplies</li>
+                <li>$200 - Medical Aid</li>
+                <li>$200 - Education Fund</li>
+            </ul>
+        </section>
+
+        <!-- NGO Admin Information -->
+        <section id="admin-info">
+            <h2>NGO Admin Profile</h2>
+            <p>Active Volunteers: <span id="active-volunteers">20</span></p>
+            <p>Total Funds Managed: $<span id="total-funds">10000</span></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AMU Care Foundation. All rights reserved.</p>
+        <ul>
+            <li><a href="support.html">Help</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

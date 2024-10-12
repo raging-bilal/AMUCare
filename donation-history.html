@@ -1,0 +1,87 @@
+<!-- templates/donation-history.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation History | AMU Care Foundation</title>
+    <link rel="stylesheet" href="static/css/style.css"> <!-- Main CSS for consistent styling -->
+    <link rel="stylesheet" href="static/css/donation-history.css"> <!-- Page-specific CSS -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="static/images/logo.png" alt="AMU Care Foundation Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="volunteer-opportunities.html">Volunteer Opportunities</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="request-aid.html">Request Aid</a></li>
+                <li><a href="manage-aid.html">Manage Aid</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="donation-history.html">Donation History</a></li> <!-- Current Page -->
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Donation History</h1>
+
+        <!-- Donation Summary Section -->
+        <section id="donation-summary">
+            <h2>Donation Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Donor Name</th>
+                        <th>Date</th>
+                        <th>Amount Donated</th>
+                        <th>Fund Allocation</th>
+                        <th>Receipt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice Johnson</td>
+                        <td>2024-01-10</td>
+                        <td>$500</td>
+                        <td>Medical Aid</td>
+                        <td><a href="#" class="cta-button">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>Michael Brown</td>
+                        <td>2024-01-15</td>
+                        <td>$300</td>
+                        <td>Food & Shelter</td>
+                        <td><a href="#" class="cta-button">Download</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Fund Allocation Details Section -->
+        <section id="fund-allocation-details">
+            <h2>Fund Allocation Details</h2>
+            <p>Your donations have helped provide food, medical aid, and shelter to those in need. Here are the details of how your donations were used:</p>
+            <ul>
+                <li><strong>Medical Aid:</strong> $500 for providing essential medications to 50 patients.</li>
+                <li><strong>Food & Shelter:</strong> $300 for distributing food to 100 families and providing temporary shelter.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AMU Care Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="static/js/script.js" defer></script> <!-- Main JS -->
+    <script src="static/js/donation-history.js" defer></script> <!-- Page-specific JS -->
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!-- templates/admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | AMU Care Foundation</title>
+    <link rel="stylesheet" href="static/css/style.css"> <!-- Main CSS -->
+    <link rel="stylesheet" href="static/css/admin.css"> <!-- Admin-specific CSS -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="static/images/logo.png" alt="AMU Care Foundation Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="admin.html">Admin Panel</a></li> <!-- Admin Panel Link -->
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Admin Panel</h1>
+        
+        <!-- Admin Functions -->
+        <section id="admin-functions">
+            <h2>User Management</h2>
+            <button class="cta-button" onclick="manageUsers()">Manage Users</button>
+
+            <h2>Opportunity Management</h2>
+            <button class="cta-button" onclick="manageOpportunities()">Manage Opportunities</button>
+
+            <h2>Aid Management</h2>
+            <button class="cta-button" onclick="manageAid()">Manage Aid Requests</button>
+
+            <h2>Donation Management</h2>
+            <button class="cta-button" onclick="manageDonations()">Manage Donations</button>
+        </section>
+
+        <!-- Admin Panels for Each Section -->
+        <section id="admin-panels">
+            <div id="user-management" class="admin-panel">
+                <h3>Manage Users</h3>
+                <p>Admin can add, edit, or deactivate users here.</p>
+                <!-- User management functionality will go here -->
+            </div>
+
+            <div id="opportunity-management" class="admin-panel">
+                <h3>Manage Opportunities</h3>
+                <p>Admin can create and manage volunteer opportunities here.</p>
+                <!-- Opportunity management functionality will go here -->
+            </div>
+
+            <div id="aid-management" class="admin-panel">
+                <h3>Manage Aid Requests</h3>
+                <p>Admin can oversee aid requests and assign resources here.</p>
+                <!-- Aid management functionality will go here -->
+            </div>
+
+            <div id="donation-management" class="admin-panel">
+                <h3>Manage Donations</h3>
+                <p>Admin can view donation records and manage fund allocation here.</p>
+                <!-- Donation management functionality will go here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AMU Care Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="static/js/script.js" defer></script> <!-- Main JS -->
+    <script src="static/js/admin.js" defer></script> <!-- Admin-specific JS -->
+</body>
+</html>

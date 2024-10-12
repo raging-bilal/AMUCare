@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration - AMU Care Foundation</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="static/images/logo.png" alt="AMU Care Foundation Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="register-form">
+            <h1>Register for AMU Care Foundation</h1>
+            <form id="registrationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="role">Select Role:</label>
+                <select id="role" name="role">
+                    <option value="volunteer">Volunteer</option>
+                    <option value="donor">Donor</option>
+                    <option value="ngo_admin">NGO Administrator</option>
+                </select>
+
+                <div id="skillsContainer" class="hidden">
+                    <label for="skills">Skills (for Volunteers):</label>
+                    <input type="text" id="skills" name="skills" placeholder="e.g., Teaching, Fundraising">
+                </div>
+
+                <button type="submit" class="cta-button">Register</button>
+            </form>
+
+            <div id="formMessage"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AMU Care Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>

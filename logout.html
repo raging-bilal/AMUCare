@@ -1,0 +1,43 @@
+<!-- templates/logout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout | AMU Care Foundation</title>
+    <link rel="stylesheet" href="static/css/style.css"> <!-- Main CSS -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="static/images/logo.png" alt="AMU Care Foundation Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>You have been logged out</h1>
+        <p>Thank you for visiting AMU Care Foundation. You have been successfully logged out.</p>
+        <p>Redirecting to the home page...</p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AMU Care Foundation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Redirect to home page after 3 seconds
+        setTimeout(function(){
+            window.location.href = "index.html";  // Redirect to the homepage
+        }, 3000);
+    </script>
+</body>
+</html>

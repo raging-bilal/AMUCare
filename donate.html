@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/donate.css">
+    <title>Donate</title>
+</head>
+<body>
+    <header>
+        <h1>Make a Donation</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Sign Up</a>
+            <a href="volunteer-opportunities.html">Volunteer Opportunities</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="donation-form">
+            <h2>Your Contribution Matters</h2>
+            <form id="donateForm">
+                <label for="donationAmount">Donation Amount ($):</label>
+                <input type="number" id="donationAmount" required>
+
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" required>
+                    <option value="">Select Payment Method</option>
+                    <option value="creditCard">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+
+                <label for="personalDetails">Personal Details:</label>
+                <input type="text" id="personalDetails" placeholder="Your Name" required>
+
+                <button type="submit" class="donate-button">Donate Now</button>
+            </form>
+
+            <div id="progress">
+                <h3>Donation Goals</h3>
+                <p id="goal">Goal: $5000</p>
+                <div id="progress-bar">
+                    <div id="progress-fill" style="width: 0%;"></div>
+                </div>
+                <p id="currentTotal">Current Total: $<span id="currentAmount">0</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AMU Care Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="static/js/donate.js"></script>
+</body>
+</html>
