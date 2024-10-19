@@ -1,18 +1,22 @@
-/* static/css/home.css */
-
+/* Hero Section */
 .hero {
     position: relative;
     overflow: hidden;
+    height: 500px;
+    background-color: #f3f3f3;
 }
 
 .carousel {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    position: relative;
+    height: 100%;
 }
 
 .carousel img {
     width: 100%;
-    height: auto;
+    height: 500px; /* Ensure the height of the images is uniform */
+    object-fit: cover;
     display: none; /* Hide all images initially */
 }
 
@@ -20,34 +24,178 @@
     display: block; /* Only show active image */
 }
 
+/* Carousel Control Buttons */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 2em;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.carousel-control.prev {
+    left: 20px;
+}
+
+.carousel-control.next {
+    right: 20px;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Statistics Section */
 .statistics {
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    background-color: #f9f9f9;
 }
 
 .stat {
     text-align: center;
 }
 
+.stat h3 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.stat p {
+    font-size: 30px;
+    color: #2980b9;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #34495e;
+}
+
 .testimonials blockquote {
     border-left: 4px solid #2c3e50;
     padding-left: 20px;
     margin: 20px 0;
+    font-size: 18px;
+    color: #7f8c8d;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
 }
 
+.testimonials blockquote h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.testimonials blockquote footer {
+    font-size: 16px;
+    color: #95a5a6;
+}
+
+/* Gallery Section */
 .gallery {
-    margin: 20px;
+    margin: 40px 20px;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #34495e;
+    margin-bottom: 30px;
 }
 
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
+    gap: 15px;
 }
 
 .gallery img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+    background-color: #34495e;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* General Styling */
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    color: #7f8c8d;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Add Responsive Design */
+@media (max-width: 768px) {
+    .statistics {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel img {
+        height: auto; /* Make carousel images responsive */
+    }
+
+    .cta-button {
+        font-size: 16px;
+    }
+
+    .testimonials blockquote, .gallery-grid {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
